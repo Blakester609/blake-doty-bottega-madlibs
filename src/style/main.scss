@@ -1,14 +1,39 @@
 .home {
+    position: relative;
     background-color: #rgba(207, 207, 207, 0.06);
     display: grid;
     // justify-content: center;
     justify-items: center;
-    grid-template-rows: [header-s] 218px [header-e card-s] 994px [card-e];
+    grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
 }
 
-// .header {
-//     align-self: center;
-// }
+.header {
+    align-self: center;
+
+    &__skew {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 31%, 0 62%);
+        clip-path: polygon(0 0, 100% 0%, 100% 31%, 0 62%);
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        background-color: #444444;
+    }
+    &__border {
+        -webkit-clip-path: polygon(0 61%, 100% 29%, 100% 32%, 0 64%);
+        clip-path: polygon(0 61%, 100% 29%, 100% 32%, 0 64%);
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        background-color: #00cb79;
+    }
+
+}
 
 .card {
     min-height: 736px;
