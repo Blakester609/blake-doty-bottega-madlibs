@@ -74,7 +74,7 @@ class Card extends Component {
 
         return (
             <form onSubmit={this.handleFormSubmit} className="card">
-                <div className="care__inputs">
+                <div className="card__inputs">
                 {
                     inputData.map((data, index) => { 
                         return Input((data), this.handleInputChange, index) 
