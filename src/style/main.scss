@@ -9,6 +9,14 @@
     text-align: center;
 }
 
+.gray {
+    background: #b3b3b3;
+}
+
+.green {
+    background: #00cb79;
+}
+
 .home {
     position: relative;
     background-color: #rgba(207, 207, 207, 0.06);
@@ -167,7 +175,6 @@
     }
 
     &__number {
-        background-color: #00cb79;
         grid-column: number-s/number-e;
         color: white;
         font-size: 20px;

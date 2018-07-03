@@ -15,3 +15,10 @@ class Home extends Component {
 }
 
 export default Home;
+
+// things we need to fix
+    // placeholder
+    // gray and green number labels
+    // Adding in labels
+    // Generate btn space/card-height
+    
