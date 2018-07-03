@@ -130,6 +130,17 @@
         justify-self: center;
         margin-bottom: 84px;
 
+        &__label {
+            height: 27px;
+            width: 27px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;
+            margin: 4px;
+        }
+
         p {
             line-height: 29px;
             padding: 50px;
@@ -185,3 +196,4 @@
         width: 26px;
     }
 }
+
